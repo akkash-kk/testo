@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Motion Box: edit videos online | SequelBox</title>
+<meta name="description" content="Edit videos online with Motion Box: trim, caption and score footage in the browser and export a finished video.">
+<!-- @include head -->
+<script type="module" src="/src/pages/motionbox.js"></script>
+</head>
+<body>
+<!-- @include sprite -->
+<!-- @include header -->
+
+<main class="mcp">
+<section class="mhero">
+  <div class="mhero-glow"></div>
+  <div class="apps"><span><i class="ab" style="background:#4f69f2"></i>Trim</span><span><i class="ab" style="background:#c0397a"></i>Captions</span><span><i class="ab" style="background:#d97757"></i>Music</span><span><i class="ab" style="background:#1d78d4"></i>Transitions</span><span><i class="ab" style="background:#2f6df0"></i>Resize</span><span><i class="ab" style="background:#222"></i>Export</span></div>
+  <div class="mhero-row">
+    <div class="appicon light"><b class="display" style="color:#111;font-size:22px">SB</b></div>
+    <div class="dots"></div>
+    <div class="mhero-txt"><h1 class="display">Edit videos online<br>with Motion Box</h1><p>Trim, caption and score your footage right in the browser. Bring in your SequelBox mockups and export a finished video.</p></div>
+    <div class="appicon dark"><b class="display" style="font-size:22px">▶</b></div>
+  </div>
+  <a class="pill-btn" href="#"><span class="ro"><svg class="ic"><use href="#i-openai"/></svg></span>Open Motion Box</a>
+</section>
+
+<section class="demo">
+  <h2 class="display">One timeline, from raw clip to export</h2>
+  <p class="lede">A look at the Motion Box editor: footage, mockups, captions and music in one place.</p>
+  <div class="pin" id="demoPin" style="--n:7">
+    <div class="pin-stick">
+      <div class="demo-grid" id="demoGrid">
+        <div class="side">
+          <div class="demo-menu" id="demoMenu"><button class="dm on"><svg class="ic"><use href="#i-m-edit"/></svg>Trim and cut</button><button class="dm"><svg class="ic"><use href="#i-m-video"/></svg>Add captions</button><button class="dm"><svg class="ic"><use href="#i-m-music"/></svg>Add music</button><button class="dm"><svg class="ic"><use href="#i-m-bg"/></svg>Resize for social</button><button class="dm"><svg class="ic"><use href="#i-m-mic"/></svg>Add voiceover</button><button class="dm"><svg class="ic"><use href="#i-m-chain"/></svg>Import mockups</button><button class="dm"><svg class="ic"><use href="#i-m-search"/></svg>Export video</button></div>
+          <div class="side-foot"><b id="demoCount">01</b><span>/ 07</span><i class="rail"><u id="demoRail"></u></i><em>Scroll to explore</em></div>
+        </div>
+        <div class="win" id="win" data-step="0">
+          <div class="win-bar"><span class="d"></span><span class="d"></span><span class="d"></span><em>Product launch, 9:16</em><span class="badge"><svg class="ic"><use href="#i-badge"/></svg>Motion Box <u></u></span></div>
+          <div class="win-body">
+            <div class="chat">
+              <div class="chat-msgs">
+                <div class="thumb ph" style="--g:linear-gradient(160deg,#8a8f98,#3a3f48)"><img src="/images/mcp-thumb.jpg" alt="" onerror="this.remove()"></div>
+                <div class="bubble" id="bubble">Here's the product spin. Trim the first 2 seconds, add captions and finish with our logo.</div>
+                <div class="think" id="think"><span>•••</span> Thinking</div>
+                <div class="ai" id="ai"><div class="ai-h"><i></i>Motion Box</div><p id="aiText"></p><ul id="aiList"></ul></div>
+              </div>
+              <div class="reply"><span>Reply…</span><div><b><svg class="ic"><use href="#i-plus"/></svg></b><button aria-label="Send"><svg class="ic"><use href="#i-send"/></svg></button></div></div>
+            </div>
+            <div class="stage">
+              <div class="stage-top"><span class="stage-name" id="stageName">Trim and cut</span><span class="stage-meta" id="stageMeta">9:16 · 30 fps</span><div class="zoom"><i></i><i class="on"></i><i></i></div></div>
+              <div class="stage-mid">
+                <div class="canvas-wrap">
+                  <div class="canvas" id="canvas">
+                    <div class="cv-bg"></div><div class="cv-grid"></div>
+                    <div class="cv-safe"></div>
+                    <div class="cv-title"><small>SEQUELBOX</small><b>Hoodie 01</b></div>
+                    <svg class="cv-mock" viewBox="0 0 200 220" aria-hidden="true"><defs><linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2d3a"/><stop offset="1" stop-color="#0e1016"/></linearGradient></defs><path d="M72 22Q100 2 128 22L162 40L198 124L168 138L156 108V212H44V108L32 138L2 124L38 40Z" fill="url(#hg)" stroke="rgba(255,255,255,.22)" stroke-width="1.5"/><path d="M76 24Q100 58 124 24" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="2"/><path d="M92 150H108L112 178H88Z" fill="rgba(255,255,255,.08)"/><rect x="82" y="96" width="36" height="20" rx="4" fill="rgba(255,255,255,.92)"/><text x="100" y="110" text-anchor="middle" font-size="9" font-weight="800" fill="#111" font-family="sans-serif">SB</text></svg>
+                    <div class="cv-gizmo"><i></i><i></i></div>
+                    <div class="cv-cap"><span>Meet the new hoodie</span></div>
+                    <div class="cv-logo">SB</div>
+                    <div class="cv-bar"><u></u></div>
+                  </div>
+                </div>
+                <aside class="insp" id="insp"></aside>
+              </div>
+              <div class="tl">
+                <div class="tl-ruler"><span>0s</span><span>3s</span><span>6s</span><span>9s</span><span>12s</span><span>15s</span></div>
+                <div class="tl-body">
+                  <div class="tl-row" data-from="0"><label>Video</label><div class="lane">
+                    <div class="clip c1" style="left:0;width:33%"><span>Intro.mp4</span><i class="cut"></i><b class="h l"></b><b class="h r"></b></div>
+                    <div class="clip c2" style="left:34%;width:37%"><span>Product spin</span></div>
+                    <div class="clip c3" style="left:72%;width:28%"><span>Outro</span></div>
+                    <em class="gapmark" style="left:33.5%">−1.2s</em>
+                  </div></div>
+                  <div class="tl-row" data-from="1"><label>Captions</label><div class="lane"><span class="cc" style="left:5%;width:20%">Meet the hoodie</span><span class="cc" style="left:27%;width:18%">Built to last</span><span class="cc" style="left:47%;width:22%">Drops Friday</span><span class="cc" style="left:72%;width:18%">sequelbox.com</span></div></div>
+                  <div class="tl-row" data-from="2"><label>Music</label><div class="lane wave" data-bars="70" data-kind="music"></div></div>
+                  <div class="tl-row" data-from="4"><label>Voice</label><div class="lane wave v" data-bars="46" data-kind="voice"></div></div>
+                  <div class="tl-row" data-from="5"><label>3D</label><div class="lane"><span class="mk" style="left:40%;width:42%">Hoodie · 360° spin</span></div></div>
+                  <div class="playhead" id="playhead"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="create">
+  <h2 class="display">Start with a <span>ready-made template</span></h2>
+  <p class="lede c">Pick a template for the video you want to make, add your footage or mockup and edit.</p>
+  <div class="pin" id="createPin" style="--n:6">
+    <div class="pin-stick">
+      <div class="create-grid" id="createGrid">
+        <div class="side">
+          <div class="ctabs" id="ctabs"><button class="ct on"><svg class="ic"><use href="#i-t-flame"/></svg>Popular</button><button class="ct"><svg class="ic"><use href="#i-t-image"/></svg>Mockups</button><button class="ct"><svg class="ic"><use href="#i-t-video"/></svg>Reels</button><button class="ct"><svg class="ic"><use href="#i-t-sound"/></svg>Ads</button><button class="ct"><svg class="ic"><use href="#i-t-edit"/></svg>Tutorials</button><button class="ct"><svg class="ic"><use href="#i-t-vfx"/></svg>Launch videos</button></div>
+          <div class="side-foot"><b id="createCount">01</b><span>/ 06</span><i class="rail"><u id="createRail"></u></i><em>Scroll to explore</em></div>
+        </div>
+        <div class="cpanel">
+          <div class="cp-head"><div><div class="eyebrow" id="cpKicker">Most used</div><h3 id="cpTitle">Popular templates</h3><p id="cpText">The starting points people open first.</p></div><div class="cp-meta"><span id="cpCount">4 templates</span><a class="link-blue" href="#">Browse all →</a></div></div>
+          <div class="cards" id="cards"><article class="mc ph" style="--g:linear-gradient(160deg,#3a3a3a,#1a1a1a)"><div class="mc-b"><h3>360° product spin</h3><p>Turn a 3D mockup into a smooth turntable video.</p><a class="try" href="#">Try in Motion Box</a></div></article><article class="mc ph" style="--g:linear-gradient(160deg,#a8503a,#3a2b3f)"><div class="mc-b"><h3>Social reel</h3><p>A 9:16 reel with captions and music, ready to post.</p><a class="try" href="#">Try in Motion Box</a></div></article><article class="mc ph" style="--g:linear-gradient(160deg,#6a8fb8,#2b2f4a)"><div class="mc-b"><h3>Launch video</h3><p>Title, product shots and logo outro in one timeline.</p><a class="try" href="#">Try in Motion Box</a></div></article><article class="mc ph" style="--g:linear-gradient(160deg,#4f69f2,#1b2a52)"><div class="mc-b"><h3>App walkthrough</h3><p>Show a phone or laptop screen with captions and zooms.</p><a class="try" href="#">Try in Motion Box</a></div></article></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uses"><div class="eyebrow">What people make with it</div><div class="chips"><a class="chip" href="#">Product videos</a><a class="chip" href="#">Reels and shorts</a><a class="chip" href="#">Ads</a><a class="chip" href="#">App demos</a><a class="chip" href="#">Tutorials</a><a class="chip" href="#">Launch videos</a></div></div>
+</section>
+
+<section class="models">
+  <h2 class="display">What is inside the editor</h2>
+  <p class="lede">Everything you need to go from raw footage to a published video.</p>
+  <div class="mrows"><div class="mrow"><div class="mtrack"><span class="mp">Timeline</span><span class="mp">Trim</span><span class="mp">Split</span><span class="mp">Captions</span><span class="mp">Titles</span><span class="mp">Music</span><span class="mp">Voiceover</span><span class="mp">Transitions</span><span class="mp">Filters</span><span class="mp">Speed</span><span class="mp">Resize</span><span class="mp">Mockup import</span><span class="mp">MP4 export</span><span class="mp">4K export</span><span class="mp">Timeline</span><span class="mp">Trim</span><span class="mp">Split</span><span class="mp">Captions</span><span class="mp">Titles</span><span class="mp">Music</span><span class="mp">Voiceover</span><span class="mp">Transitions</span><span class="mp">Filters</span><span class="mp">Speed</span><span class="mp">Resize</span><span class="mp">Mockup import</span><span class="mp">MP4 export</span><span class="mp">4K export</span></div></div></div>
+</section>
+
+<section class="pricing">
+  <h2 class="display">One plan. Both tools.</h2>
+  <p class="lede c">Every paid plan includes the 3D mockup editor and Motion Box.</p>
+  <div class="ptop"><div class="seg" id="seg"><button class="on">Individual</button><button>Teams</button></div>
+    <label class="tog">Monthly <input type="checkbox" id="annual" checked><span class="sw"></span> Annual <em>Save 25% with annual</em></label></div>
+  <div class="plans" id="plans"></div>
+  <p class="vat">Prices exclude VAT and local taxes</p>
+</section>
+
+<a class="recipe" href="#">New: import a 3D mockup straight into your Motion Box timeline <svg class="ic"><use href="#i-ext"/></svg></a>
+
+<section class="faq-grid">
+  <h2 class="display">FAQs</h2>
+  <div class="faq-list" id="faq"><details><summary>What is Motion Box?</summary><p>An online video editor from SequelBox. Edit, caption and export videos in your browser.</p></details><details><summary>Do I need to install anything?</summary><p>No. Motion Box runs in your browser.</p></details><details><summary>Can I use my SequelBox mockups?</summary><p>Yes. Export a mockup and import it into your timeline.</p></details><details><summary>What video sizes can I export?</summary><p>9:16, 1:1 and 16:9, in MP4.</p></details><details><summary>How long can my videos be?</summary><p>Replace with your own answer.</p></details><details><summary>Is there a free plan?</summary><p>Yes. Starter is free with 720p exports.</p></details></div>
+</section>
+
+<section class="bring">
+  <div class="bring-dots"></div>
+  <h2 class="display">Start your next video in Motion Box</h2>
+  <p>Open it in your browser. Nothing to install.</p>
+  <a class="pill-btn" href="#">Open Motion Box</a>
+</section>
+</main>
+
+<!-- @include footer -->
+</body>
+</html>

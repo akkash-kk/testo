@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SequelBox: 3D mockup editor and Motion Box video editor</title>
+<meta name="description" content="SequelBox is the online studio for 3D product mockups and video: design clothing, packaging, phones and laptops in 3D, then edit videos with Motion Box.">
+<!-- @include head -->
+<script type="module" src="/src/pages/home.js"></script>
+</head>
+<body>
+<!-- @include sprite -->
+<!-- @include header -->
+
+<!-- HERO -->
+<section class="hero">
+  <div class="bg ph"><img src="/images/hero.jpg" alt="" onerror="this.remove()"></div>
+  <div class="hero-inner">
+    <h1 class="display">SequelBox</h1>
+    <p class="sub">The online studio for 3D product mockups and video. Design clothing, packaging, phones and laptops in 3D, then edit videos with Motion Box.</p>
+    <div class="tiles">
+      <a class="tile" href="mockups.html"><i style="background:rgba(156,130,229,.2);color:#b9a4f2">✦</i>3D Mockups</a>
+      <a class="tile" href="#tools"><i style="background:rgba(111,139,247,.2);color:#8fa6f9">▣</i>Apparel</a>
+      <a class="tile" href="#tools"><i style="background:rgba(23,203,141,.2);color:#3ddcA6">◧</i>Packaging</a>
+      <a class="tile" href="#tools"><i style="background:rgba(41,212,207,.2);color:#4ee3de">▭</i>Devices</a>
+      <a class="tile" href="motionbox.html"><i style="background:rgba(250,250,250,.14);color:#fafafa">▶</i>Motion Box</a>
+    </div>
+  </div>
+  <nav class="crumbs" aria-label="Breadcrumb"><span>Home</span>/<span class="pill">SequelBox</span></nav>
+</section>
+
+<div class="page">
+  <aside class="toc">
+    <div class="eyebrow">On this page</div>
+    <ul id="toc">
+      <li><a href="#launched">What's new</a></li>
+      <li><a href="#tools">Mockup tools</a></li>
+      <li><a href="#models">Templates</a></li>
+      <li><a href="#workflows">Products</a></li>
+      <li><a href="#connect">Connect</a></li>
+      <li><a href="#developers">Developers</a></li>
+      <li><a href="#business">Teams</a></li>
+      <li><a href="#learn">Learn</a></li>
+    </ul>
+  </aside>
+
+  <main class="content">
+    <section class="blk" id="launched">
+      <div class="sec-row">
+        <div>
+          <div class="eyebrow">What's new</div>
+          <h2 class="display">Latest from SequelBox</h2>
+        </div>
+        <div class="arrows"><button type="button" id="prev" aria-label="Previous">←</button><button type="button" id="next" aria-label="Next">→</button></div>
+      </div>
+      <div class="scroller" id="sc">
+        <a class="h-card launch" href="motionbox.html"><div class="thumb" style="background:linear-gradient(135deg,#d6a24a,#b3263b 55%,#23366b)"><span class="badge-new">New tool</span><span class="date">Nov 21</span></div><div class="h-body"><h3>Motion Box</h3><p>Edit videos online, right in your browser.</p><span class="go">Try it →</span></div></a>
+        <a class="h-card launch" href="mockups.html"><div class="thumb" style="background:linear-gradient(135deg,#9bb07a,#3f5a3a 60%,#c98f6a)"><span class="badge-new">New templates</span><span class="date">Nov 17</span></div><div class="h-body"><h3>Hoodie and dress mockups</h3><p>Two new apparel models with front, back and sleeve artwork.</p><span class="go">See templates →</span></div></a>
+        <a class="h-card launch" href="mockups.html"><div class="thumb" style="background:linear-gradient(135deg,#6a8fb8,#2b3a6a 60%,#8fa0f7)"><span class="badge-new">Update</span><span class="date">Nov 10</span></div><div class="h-body"><h3>Device mockups</h3><p>Phones, laptops and tablets with your own screens.</p><span class="go">Open the editor →</span></div></a>
+        <a class="h-card launch" href="mockups.html"><div class="thumb" style="background:linear-gradient(135deg,#c88a5a,#5a3a2b 60%,#e8d8c8)"><span class="badge-new">New templates</span><span class="date">Nov 3</span></div><div class="h-body"><h3>Packaging mockups</h3><p>Boxes, pouches and bottles, wrapped in your artwork.</p><span class="go">See templates →</span></div></a>
+      </div>
+    </section>
+
+    <section class="blk" id="tools">
+      <div class="eyebrow">Tools</div>
+      <h2 class="display">Create with 3D mockups</h2>
+      <p class="lede">Every product has its own page. Pick a category and open the one you need.</p>
+      <div class="tabs" id="tabs"><button type="button" class="on">Apparel</button><button type="button">Packaging</button><button type="button">Devices</button><button type="button">Drinkware</button><button type="button">Motion Box</button></div>
+      <div class="grid3" id="tg"></div>
+      <a class="link-blue" href="templates.html">See every template →</a>
+    </section>
+
+    <section class="blk" id="models">
+      <div class="eyebrow">Templates</div>
+      <h2 class="display">Popular templates</h2>
+      <p class="lede">The most-used 3D models, ready for your artwork. Switch by category.</p>
+      <div class="tabs" id="mt"><button type="button" class="on">All</button><button type="button">Apparel</button><button type="button">Packaging</button><button type="button">Devices</button></div>
+      <div class="scroller" id="ms"></div>
+    </section>
+
+    <section class="blk" id="workflows">
+      <div class="eyebrow">Products</div>
+      <h2 class="display">Two products, one workflow</h2>
+      <div class="grid2">
+        <a class="h-card wf" href="mockups.html"><div class="m" style="background:linear-gradient(135deg,rgba(133,102,220,.55),rgba(133,102,220,.15))"></div><div class="h-body"><span class="kind" style="background:rgba(133,102,220,.18);color:#b9a4f2">3D Mockup Editor</span><h3>Design clothing, packaging and devices in 3D</h3><p>Upload your artwork, rotate the model, change colors and export studio-quality images in minutes.</p><span class="go">Explore the editor →</span></div></a>
+        <a class="h-card wf" href="motionbox.html"><div class="m" style="background:linear-gradient(135deg,#2b2b33,#6b5fa0)"></div><div class="h-body"><span class="kind">Motion Box</span><h3>Edit videos online, no install</h3><p>Trim, caption and score your footage in the browser. Bring your mockups straight into the timeline.</p><span class="go">Explore Motion Box →</span></div></a>
+      </div>
+    </section>
+
+    <section class="blk" id="connect">
+      <div class="eyebrow">Connect</div>
+      <h2 class="display">Use SequelBox anywhere</h2>
+      <p class="lede">Open SequelBox in your browser, on your phone or from your own systems.</p>
+      <div class="connect">
+        <div class="connect-list">
+          <details open><summary><i></i><div><b>Web app</b><span>Design and edit in any browser</span></div></summary>
+            <p>SequelBox and Motion Box run in your browser. Open a template, add your design and export. There is nothing to install.</p>
+            <div class="btns"><div>3D Editor <a href="mockups.html">Open ↗</a></div><div>Motion Box <a href="motionbox.html">Open ↗</a></div><div>Templates <a href="templates.html">Browse ↗</a></div></div>
+          </details>
+          <details><summary><i></i><div><b>Mobile app</b><span>Design and share from your phone</span></div></summary><p>Pick up a design on your phone, review it and share a link. The mobile app is coming soon.</p></details>
+          <details><summary><i></i><div><b>API</b><span>Render mockups from your own system</span></div></summary><p>One REST API renders mockups and videos from your own tools. See the example below.</p></details>
+          <details><summary><i></i><div><b>Share and export</b><span>Send review links and download files</span></div></summary><p>Share a review link with a client or teammate, or download PNG, JPG and MP4 files.</p></details>
+        </div>
+        <div class="panel connect-panel"><small>● SequelBox</small><div class="m" style="background:linear-gradient(135deg,#3a3a52,#8a6fb5 60%,#e0a27a)"></div></div>
+      </div>
+    </section>
+
+    <section class="blk" id="developers">
+      <div class="dev">
+        <div>
+          <div class="eyebrow">Developers</div>
+          <h2 class="display">SequelBox API</h2>
+          <p class="lede">Render mockups and videos from your own system through one REST API. Automate product images at scale.</p>
+          <a class="btn" href="#" style="margin-top:20px">Read the docs ↗</a>
+        </div>
+        <pre><code># Render a 3D mockup
+curl -X POST https://api.sequelbox.com/v1/mockups \
+  -H "x-api-key: $SEQUELBOX_API_KEY" \
+  -d '{
+    "template": "hoodie",
+    "artwork_url": "https://example.com/logo.png",
+    "color": "#4f69f2"
+  }'</code></pre>
+      </div>
+    </section>
+
+    <section class="blk" id="business">
+      <div class="panel biz">
+        <div class="eyebrow">Teams</div>
+        <h2 class="display">For teams</h2>
+        <p class="lede">Share templates and projects, manage seats and keep every design on brand.</p>
+        <div class="links"><a href="pricing.html">SequelBox for teams</a><a href="#">Enterprise</a><a href="#">Talk to sales</a></div>
+      </div>
+    </section>
+
+    <section class="blk" id="learn">
+      <div class="eyebrow">Learn</div>
+      <h2 class="display">Learn</h2>
+      <p class="lede">Tutorials, community and guides to get more from every tool.</p>
+      <div class="grid2" id="lg"></div>
+    </section>
+  </main>
+</div>
+
+<!-- FAQ -->
+<section class="faq-sec">
+  <div class="in">
+    <h2 class="display">FAQ</h2>
+    <div class="faq">
+      <details><summary>What is SequelBox?</summary><p>SequelBox is an online studio for 3D product mockups. Upload your artwork and preview it on clothing, packaging, phones, laptops and more.</p></details>
+      <details><summary>What is Motion Box?</summary><p>Motion Box is our online video editor. Trim, caption and score footage in your browser and export a finished video.</p></details>
+      <details><summary>Do I need 3D or design skills?</summary><p>No. Pick a template, add your artwork and adjust colors and size.</p></details>
+      <details><summary>Which products can I mock up?</summary><p>Dresses, T-shirts, hoodies, caps, phones, laptops, tablets, boxes, pouches, bottles and more, with new templates added regularly.</p></details>
+      <details><summary>Can I send a mockup to Motion Box?</summary><p>Yes. Export your mockup and open it in Motion Box to build a video around it.</p></details>
+      <details><summary>Does SequelBox have an API?</summary><p>Yes. The API lets you render mockups from your own system.</p></details>
+      <details><summary>Can I use SequelBox for free?</summary><p>Yes. The Starter plan is free, with a few exports every month.</p></details>
+      <details><summary>Can teams share projects?</summary><p>Yes. Team plans include a shared workspace, libraries and review links.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="bg ph"><img src="/images/cta.jpg" alt="" onerror="this.remove()"></div>
+  <h2 class="display">Your next product shot<br>is one upload away</h2>
+  <a class="btn" href="mockups.html">Open the editor</a>
+</section>
+
+<!-- @include footer -->
+</body>
+</html>

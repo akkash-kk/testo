@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SequelBox: 3D mockup editor and Motion Box video editor</title>
+<meta name="description" content="Design 3D mockups in your browser: clothing, packaging, phones and laptops, then turn them into video with Motion Box.">
+<!-- @include head -->
+<script type="module" src="/src/pages/mockups.js"></script>
+</head>
+<body>
+<!-- @include sprite -->
+<!-- @include header -->
+
+<!-- HERO -->
+<section class="hero">
+  <div class="bg ph"><img src="/images/hero.jpg" alt="" onerror="this.remove()"></div>
+  <div class="hero-inner">
+    <h1 class="display">Design 3D mockups<br>in your browser</h1>
+    <p class="sub">Put your artwork on dresses, hoodies, phones, laptops and product packaging. Rotate, recolor and export studio-quality visuals in minutes, then turn them into video with Motion Box.</p>
+    <form class="prompt" id="promptForm">
+      <div class="prompt-box">
+        <textarea id="prompt" placeholder="What do you want to mock up? e.g. black hoodie, perfume box, phone" aria-label="Prompt"></textarea>
+        <div class="prompt-row"><button class="btn" type="submit">Open editor</button></div>
+      </div>
+      <div class="prompt-meta"><span>Free to start. No card required.</span><a href="#make">See what you can mock up ↓</a></div>
+    </form>
+  </div>
+  <nav class="crumbs"><a href="index.html">Home</a>/<a href="#">Products</a>/<span class="pill">3D mockup editor</span></nav>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <div class="eyebrow">Brands and makers already designing this way</div>
+  <div class="marquee"><div class="track" id="gallery"></div></div>
+</section>
+
+<div class="page">
+  <aside class="toc">
+    <div class="eyebrow">On this page</div>
+    <ul id="toc"><li><a href="#create">Editor</a></li><li><a href="#models">Products</a></li><li><a href="#make">Use cases</a></li><li><a href="#workflow">Motion Box</a></li><li><a href="#trust">Why SequelBox</a></li><li><a href="#numbers">For teams</a></li><li><a href="#plans">Plans</a></li></ul>
+  </aside>
+
+  <main class="content">
+
+    <!-- WHAT IT DOES -->
+    <section class="blk" id="create">
+      <div class="eyebrow">What it does</div>
+      <h2 class="display">Pick a product,<br>drop in your design</h2>
+      <p class="lede">Four steps from a flat file to a product shot. No 3D skills, no photoshoot, no install.</p>
+      <div class="split">
+        <ol class="acc" id="acc">
+          <li class="acc-item open"><button class="acc-btn"><span class="n">01</span><span class="t">Choose a product</span></button><div class="acc-panel"><h3 class="display">Start from a 3D template.</h3><p>Dresses, tees, hoodies, caps, phones, laptops, boxes, bottles and pouches. Every model is built in 3D, so folds, light and perspective look real from any angle.</p><a class="link-blue" href="templates.html">Browse templates →</a></div></li>
+          <li class="acc-item"><button class="acc-btn"><span class="n">02</span><span class="t">Add your artwork</span></button><div class="acc-panel"><p>Upload a logo, pattern or full design. Place it, scale it and wrap it onto the product.</p></div></li>
+          <li class="acc-item"><button class="acc-btn"><span class="n">03</span><span class="t">Edit in 3D</span></button><div class="acc-panel"><p>Rotate the product, change colors and materials, adjust size and lighting, and see every change live.</p></div></li>
+          <li class="acc-item"><button class="acc-btn"><span class="n">04</span><span class="t">Export or animate</span></button><div class="acc-panel"><p>Download PNG or transparent images, or send the scene to Motion Box and make a video.</p></div></li>
+        </ol>
+        <div class="grid4">
+          <div class="ph" style="--g:linear-gradient(160deg,#f2a65a,#7a3b6e)"><img src="/images/create-1.jpg" alt="Dress mockup" onerror="this.remove()"></div>
+          <div class="ph" style="--g:linear-gradient(160deg,#9ec8a0,#3d6b4f)"><img src="/images/create-2.jpg" alt="Hoodie mockup" onerror="this.remove()"></div>
+          <div class="ph" style="--g:linear-gradient(160deg,#5d8de0,#8e5bc2)"><img src="/images/create-3.jpg" alt="Phone and laptop mockup" onerror="this.remove()"></div>
+          <div class="ph" style="--g:linear-gradient(160deg,#f6d06b,#d9783a)"><img src="/images/create-4.jpg" alt="Product box mockup" onerror="this.remove()"></div>
+        </div>
+      </div>
+      <ol class="steps">
+        <li><span class="n">01</span><p><b>Pick a template.</b> Apparel, packaging or devices.</p></li>
+        <li><span class="n">02</span><p><b>Upload your design.</b> Set colors, size and placement.</p></li>
+        <li><span class="n">03</span><p><b>Export or keep going.</b> Download it, or open it in Motion Box.</p></li>
+      </ol>
+    </section>
+
+    <!-- WHICH MODEL -->
+    <section class="blk" id="models">
+      <div class="eyebrow">What you can mock up</div>
+      <h2 class="display">Every product you sell,<br>in one 3D editor</h2>
+      <p class="lede">Six template families, with new models added every month. Pick the category that matches your product.</p>
+      <div class="panel tbl-wrap" style="margin-top:15px"><table>
+        <thead><tr><th>Category</th><th>Templates</th><th>What you can change</th><th>Output</th></tr></thead><tbody><tr><td>Apparel</td><td><div class="chips"><a class="chip" href="#">Dress</a><a class="chip" href="#">T-shirt</a><a class="chip" href="#">Hoodie</a><a class="chip" href="#">Cap</a></div></td><td>Print placement, fabric color, folds</td><td><span class="out">PNG up to 4K</span></td></tr><tr><td>Packaging</td><td><div class="chips"><a class="chip" href="#">Box</a><a class="chip" href="#">Pouch</a><a class="chip" href="#">Bag</a><a class="chip" href="#">Mailer</a></div></td><td>Artwork per side, finish, size</td><td><span class="out">PNG · 360°</span></td></tr><tr><td>Devices</td><td><div class="chips"><a class="chip" href="#">Phone</a><a class="chip" href="#">Laptop</a><a class="chip" href="#">Tablet</a><a class="chip" href="#">Watch</a></div></td><td>Screen artwork, color, angle</td><td><span class="out">PNG · MP4</span></td></tr><tr><td>Drinkware</td><td><div class="chips"><a class="chip" href="#">Bottle</a><a class="chip" href="#">Can</a><a class="chip" href="#">Mug</a><a class="chip" href="#">Tumbler</a></div></td><td>Label wrap, color, material</td><td><span class="out">PNG · 360°</span></td></tr><tr><td>Accessories</td><td><div class="chips"><a class="chip" href="#">Tote bag</a><a class="chip" href="#">Backpack</a><a class="chip" href="#">Sunglasses</a></div></td><td>Pattern, color, lighting</td><td><span class="out">PNG</span></td></tr><tr><td>Custom</td><td><div class="chips"><a class="chip" href="#">Your 3D model</a></div></td><td>Upload your own model and map artwork to it</td><td><span class="out">GLB</span></td></tr></tbody></table></div>
+      <div class="panel cta-panel"><div><h3 class="display">Can't find your product?</h3><p>Tell us what you sell and we'll build the template. Most requests ship within a few weeks.</p></div><a class="btn" href="#">Request a template</a></div>
+      <div class="fam-head"><h3 class="display">Every template, by category</h3><span>6 categories · new templates every month</span></div>
+      <div class="marquee fam"><div class="track" id="families"></div></div>
+    </section>
+
+    <!-- WHAT PEOPLE MAKE -->
+    <section class="blk" id="make">
+      <div class="eyebrow">What people make</div>
+      <h2 class="display">Six jobs SequelBox<br>does every day</h2>
+      <p class="lede">Real work that ships: the product, who uses it, and what they need from it.</p>
+      <div class="cards3"><article class="uc"><div class="ph" style="--g:linear-gradient(135deg,#7a1f3d,#2b0f1d)"><img src="/images/uc-fashion.jpg" alt="Dress mockup" onerror="this.remove()"><div class="tags"><span class="tag">Apparel</span><span class="tag">3D</span></div></div><div class="uc-body"><div class="eyebrow">Fashion brands</div><h3>See the collection before you cut a single piece</h3><p>Show every colorway of a dress, tee or hoodie on a 3D model and pick winners before production.</p><div class="uc-links"><a href="#">Apparel templates <span></span></a></div></div><div class="uc-pad"></div></article><article class="uc"><div class="ph" style="--g:linear-gradient(135deg,#cdb89a,#6b8f5f)"><img src="/images/uc-pack.jpg" alt="Packaging mockup" onerror="this.remove()"><div class="tags"><span class="tag">Packaging</span></div></div><div class="uc-body"><div class="eyebrow">Product packaging</div><h3>Box, pouch and bottle, from every angle</h3><p>Wrap your artwork on packaging and share a realistic preview with your printer or client.</p><div class="uc-links"><a href="#">Packaging templates <span></span></a></div></div><div class="uc-pad"></div></article><article class="uc"><div class="ph" style="--g:linear-gradient(135deg,#6db3f0,#c7e3fa)"><img src="/images/uc-device.jpg" alt="Laptop and phone mockup" onerror="this.remove()"><div class="tags"><span class="tag">Devices</span></div></div><div class="uc-body"><div class="eyebrow">Apps and websites</div><h3>Your screens, on real devices</h3><p>Place app and website screens on phones and laptops for launches, decks and store pages.</p><div class="uc-links"><a href="#">Device templates <span></span></a></div></div><div class="uc-pad"></div></article><article class="uc"><div class="ph" style="--g:linear-gradient(135deg,#d9d6d2,#8a8f9a)"><img src="/images/uc-shop.jpg" alt="Store product images" onerror="this.remove()"><div class="tags"><span class="tag">Ecommerce</span></div></div><div class="uc-body"><div class="eyebrow">Online stores</div><h3>Product photos without a shoot</h3><p>Create clean, consistent listing images with transparent backgrounds, ready for any marketplace.</p></div><div class="uc-pad" style="height:127px"></div></article><article class="uc"><div class="ph" style="--g:linear-gradient(135deg,#e9c28a,#8a6a8f)"><img src="/images/uc-pod.jpg" alt="Print on demand" onerror="this.remove()"><div class="tags"><span class="tag">Merch</span></div></div><div class="uc-body"><div class="eyebrow">Print on demand</div><h3>Test a design before you sell it</h3><p>Preview designs on merch and share mockups with customers before an order is placed.</p><div class="uc-links"><a href="#">Merch templates <span></span></a></div></div><div class="uc-pad"></div></article><article class="uc"><div class="ph" style="--g:linear-gradient(135deg,#c9a38a,#3b2b2f)"><img src="/images/uc-agency.jpg" alt="Agency pitch deck" onerror="this.remove()"><div class="tags"><span class="tag">Teams</span></div></div><div class="uc-body"><div class="eyebrow">Agencies and studios</div><h3>Win the pitch with a real-looking concept</h3><p>Show clients their brand on real products, and share one link for feedback.</p><div class="uc-links"><a href="#">Team plans <span></span></a></div></div><div class="uc-pad"></div></article></div>
+      <div class="watch"><div class="eyebrow">Watch how it's done</div><div class="watch-row">
+        <a href="#"><div class="ph" style="--g:linear-gradient(135deg,#b3263a,#f1d9d9)"></div>Mock up a hoodie in 2 minutes</a>
+        <a href="#"><div class="ph" style="--g:linear-gradient(135deg,#556,#99a)"></div>Design product packaging in 3D</a>
+        <a href="#"><div class="ph" style="--g:linear-gradient(135deg,#7a5a3a,#d8b98a)"></div>Make a 360° product video</a></div></div>
+    </section>
+
+    <!-- AFTER THE IMAGE -->
+    <section class="blk" id="workflow">
+      <div class="eyebrow">After the mockup</div>
+      <h2 class="display">Then make it move<br>with Motion Box</h2>
+      <p class="lede">Motion Box is our online video editor. Take a mockup, a screen recording or raw footage and cut it into a finished video in the browser.</p>
+      <div class="tools"><a href="#"><b>Trim and cut</b>Split, trim and rearrange clips on a timeline.</a><a href="#"><b>Captions</b>Add titles and subtitles in minutes.</a><a href="#"><b>Music</b>Layer tracks, voiceover and sound effects.</a><a href="#"><b>Transitions</b>Smooth cuts, zooms and effects.</a><a href="#"><b>Resize</b>Turn one video into 9:16, 1:1 and 16:9.</a><a href="#"><b>Export</b>Download MP4 up to 4K.</a></div>
+      <div class="cards3"><article class="uc"><div class="ph" style="--g:linear-gradient(135deg,#3a3a3a,#8a8a8a)"><img src="/images/after-1.jpg" alt="Mockup turntable video" onerror="this.remove()"></div><div class="uc-body"><h3 style="margin-top:0;font-size:22px">From mockup to video</h3><p>Send a 3D mockup to Motion Box and turn it into a 360° spin, a reveal or a launch clip.</p><div class="uc-links"><a href="motionbox.html">Motion Box <span></span></a></div></div><div class="uc-pad"></div></article><article class="uc"><div class="ph" style="--g:linear-gradient(135deg,#3b2b2f,#a2563f)"><img src="/images/after-2.jpg" alt="Social reel" onerror="this.remove()"></div><div class="uc-body"><h3 style="margin-top:0;font-size:22px">Made for social</h3><p>Reels, shorts and ads in the right size, with captions and music built in.</p><div class="uc-links"><a href="motionbox.html">See templates <span></span></a></div></div><div class="uc-pad"></div></article><article class="uc"><div class="ph" style="--g:linear-gradient(135deg,#d77a5a,#3a2b5e)"><img src="/images/after-3.jpg" alt="Editing in a browser" onerror="this.remove()"></div><div class="uc-body"><h3 style="margin-top:0;font-size:22px">Edit anywhere</h3><p>Nothing to install. Open Motion Box in your browser and pick up where you left off.</p><div class="uc-links"><a href="motionbox.html">Open Motion Box <span></span></a></div></div><div class="uc-pad"></div></article></div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="blk" id="trust">
+      <div class="eyebrow">Why SequelBox</div>
+      <div class="trust-head"><div><h2 class="display" style="font-size:44px;line-height:54px">Built for brands that ship products</h2></div><a class="trust-badge" href="#"><i>3D</i><div><b>Open the editor</b><small>Try it free</small></div></a></div>
+      <div class="five">
+        <div><small>01</small><h4>Real 3D</h4><p>Rotate to any angle and see your design wrap around the product, with light and folds.</p></div>
+        <div><small>02</small><h4>Runs in the browser</h4><p>Nothing to install. Open it on any laptop and start designing.</p></div>
+        <div><small>03</small><h4>Your designs stay yours</h4><p>Your artwork is yours. Commercial use is included on paid plans.</p></div>
+        <div><small>04</small><h4>Print-ready exports</h4><p>High-resolution and transparent PNGs for stores, decks and printers.</p></div>
+        <div><small>05</small><h4>Image to video</h4><p>Motion Box turns finished mockups into videos in the same workflow.</p></div>
+      </div>
+    </section>
+
+    <!-- NUMBERS -->
+    <section class="blk numbers" id="numbers">
+      <div class="eyebrow">For teams</div>
+      <h2 class="display" style="font-size:44px;line-height:54px">How teams use SequelBox</h2>
+      <p class="body">Teams use SequelBox to decide, present and sell before a product exists. The editor sits between the design file and the factory.</p>
+      <div class="aside"><div><div class="eyebrow">SequelBox for Teams</div><ul><li>Shared workspace and libraries</li><li>Brand kits and saved designs</li><li>Review links for clients</li></ul><span style="font-size:14px;color:var(--dim)">From 2 seats. Set up in minutes.</span></div>
+      <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-end"><a class="btn" href="pricing.html">See team plans</a><a class="link-blue" href="#">Talk to sales →</a></div></div>
+      <div class="finding"><div class="num">01</div><div class="txt wide"><h3>Decide before you produce</h3><div class="mean"><span class="eyebrow">What it means</span><p>A realistic preview makes it easy to compare colors, placements and packaging options.</p><span class="eyebrow">What to do with it</span><p>Mock up three variants and choose one before ordering samples.</p></div></div></div><div class="finding"><div class="num">02</div><div class="txt wide"><h3>One file, every angle</h3><div class="mean"><span class="eyebrow">What it means</span><p>A 3D model replaces a folder of flat renders. Everyone sees the same product.</p><span class="eyebrow">What to do with it</span><p>Share one link instead of exporting every view.</p></div></div></div><div class="finding"><div class="num">03</div><div class="txt wide"><h3>Still to video, in one workflow</h3><div class="mean"><span class="eyebrow">What it means</span><p>A finished mockup can go straight into Motion Box for a launch video or an ad.</p><span class="eyebrow">What to do with it</span><p>Export the mockup, open Motion Box, add captions and music, and publish.</p></div></div></div>
+    </section>
+
+    <!-- PLANS -->
+    <section class="blk" id="plans">
+      <div class="eyebrow">Plans</div>
+      <h2 class="display" style="font-size:44px;line-height:54px">Start free. Upgrade when you ship.</h2>
+      <div style="max-width:720px;font-size:16px;line-height:25px;color:var(--muted);display:flex;flex-direction:column;gap:15px;margin-top:5px"><p>One account gives you the 3D mockup editor and Motion Box. Pick the plan that matches how often you export.</p></div>
+      <div class="plans">
+        <div class="plan"><div class="eyebrow">Starter</div><div class="price"><b>Free</b></div><div class="bill">no card required</div><p class="d">Try the editor with basic templates and a few exports a month.</p><a class="btn" href="#">Start free</a></div>
+        <div class="plan"><div class="eyebrow">Creator</div><div class="price"><b>₹—</b><small>/month</small></div><div class="bill">billed annually</div><p class="d">Unlimited exports, every template and Motion Box in 1080p. Built for one.</p><a class="btn" href="pricing.html">Choose a plan</a></div>
+        <div class="plan"><div class="eyebrow">Studio</div><div class="price"><b>Custom</b></div><div class="bill"></div><p class="d">Team seats, shared libraries, custom 3D models and 4K video.</p><a class="btn alt" href="#">Contact sales</a></div>
+      </div>
+      <p class="fine">Every plan starts free. No card required.</p>
+    </section>
+  </main>
+</div>
+
+<!-- FAQ -->
+<section class="faq-sec">
+  <div class="in">
+    <h2 class="display">Questions people ask</h2>
+    <div class="faq" id="faq"><details><summary>What is SequelBox?</summary><p>An online 3D mockup editor. Upload your artwork and preview it on clothing, packaging, phones, laptops and more.</p></details><details><summary>What is Motion Box?</summary><p>Our online video editor. Cut clips, add captions, music and transitions, and export a finished video from your browser.</p></details><details><summary>Do I need design or 3D skills?</summary><p>No. Pick a template, add your artwork and adjust colors and size.</p></details><details><summary>What can I mock up?</summary><p>Dresses, T-shirts, hoodies, caps, phones, laptops, tablets, boxes, pouches, bottles and more. New templates are added every month.</p></details><details><summary>What can I export?</summary><p>PNG and transparent PNG images, 360° turntables and MP4 videos from Motion Box.</p></details><details><summary>Can I send a mockup to Motion Box?</summary><p>Yes. Export your mockup and open it in Motion Box to build a video around it.</p></details><details><summary>Can I use the results commercially?</summary><p>Yes, commercial use is included on paid plans.</p></details><details><summary>Can I upload my own 3D model?</summary><p>Yes, on the Studio plan.</p></details><details><summary>Is there a mobile app?</summary><p>Yes. The SequelBox app and the website share the same account and projects.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- MORE WAYS -->
+<section class="more"><div class="more-head"><h3>More from SequelBox</h3><a href="templates.html">See all templates →</a></div><div class="more-row"><b>Mockups</b><ul><li><a href="#">Dress</a></li><li><a href="#">T-shirt</a></li><li><a href="#">Hoodie</a></li><li><a href="#">Phone</a></li><li><a href="#">Laptop</a></li><li><a href="#">Box</a></li><li><a href="#">Bottle</a></li><li><a href="#">Pouch</a></li></ul></div><div class="more-row"><b>Video</b><ul><li><a href="#">Trim video</a></li><li><a href="#">Add captions</a></li><li><a href="#">Add music</a></li><li><a href="#">Resize video</a></li><li><a href="#">Export MP4</a></li></ul></div></section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="bg ph"><img src="/images/cta.jpg" alt="" onerror="this.remove()"></div>
+  <h2 class="display">Your next product shot<br>is one upload away</h2>
+  <a class="btn" href="#top" id="ctaBtn">Open the editor</a>
+</section>
+
+<!-- @include footer -->
+</body>
+</html>
